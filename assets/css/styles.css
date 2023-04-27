@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0 15px;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.wrapper {
+  width: 450px;
+  padding: 25px;
+  border-radius: 7px;
+  background-color: #fff;
+}
+
+.wrapper .gradient-box {
+  width: 100%;
+  height: 220px;
+  border-radius: 7px;
+  background-image: linear-gradient(to left top, #977dfe, #6878ff);
+}
+
+.wrapper .row {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.row :where(.column, button) {
+  width: calc(100% / 2 - 12px);
+}
+
+.options p {
+  margin-bottom: 8px;
+  font-size: 1.12rem;
+}
+
+.options .select-box {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+.select-box select {
+  font-size: 1.12rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+.options .colors {
+  margin-left: 60px;
+}
+
+.colors input {
+  width: calc(100% / 2 - 20px);
+  height: 41px;
+  cursor: pointer;
+}
+
+.colors input:last-child {
+  margin-left: 6px;
+}
+
+.wrapper textarea {
+  font-size: 1.05rem;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: #333;
+  resize: none;
+}
+
+.buttons button {
+  font-size: 1.09rem;
+  margin: 0 0 -15px;
+  padding: 15px 0;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-size: 300% 100%;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.buttons button:hover {
+  background-position: 100% 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.buttons button {
+  outline: none;
+}
+
+.buttons .refresh {
+  background-image: linear-gradient(
+    to right,
+    #2154ac,
+    #5c84f1,
+    #48a2c0,
+    #3e4bbd
+  );
+}
+
+.buttons .copy {
+  background-image: linear-gradient(
+    to left,
+    #b466ea,
+    #7827c9,
+    #b365e9,
+    #6920b1
+  );
+}
+
+@media screen and (max-width: 555px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  h1 {
+    font-size: 2.7rem;
+  }
+
+  .wrapper {
+    width: 400px;
+    margin: 0px 15px;
+  }
+
+  .row :where(.column, button) {
+    width: calc(100% / 2 - 8px);
+  }
+
+  .options .select-box {
+    padding: 8px 15px;
+  }
+
+  .options .colors {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 40px;
+  }
+
+  .colors input {
+    width: calc(100% / 2 - 5px);
+  }
+
+  .colors input:last-child {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .wrapper {
+    width: 330px;
+  }
+}
+
+@media screen and (max-width: 403px) {
+  .container {
+    height: 102vh;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .wrapper {
+    width: 300px;
+  }
+}
